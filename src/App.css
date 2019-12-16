@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body{
+  background-color: #e9ecef;
+}
+.padding-5{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  padding-bottom: 5px;
+}
+.card-background{
+  background-color: #464747;
+}
+.list-group-item{
+  background-color: #464747;
+  font-size: 12px;
+  padding: .15rem .75rem;
+}
+.list-group-item .list-group-label{
+  color:gray;
+  padding-right: 0% !important;
+}
+.list-group-item .list-group-text{
+  color: chocolate;
+  text-align: right;
+  padding-left: 0% !important;
+}
+.card{
+  background-color:none !important;
+  border: 0 !important; 
+  min-height: 390px;
+  background-color: #464747;
+  animation: ZoomIn 2s linear;
+}
+@keyframes ZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity:1;
+    transform: scale(1);
+  }
+}
+
+.card-title{
+    background-color: gray;
+    opacity: 0.8;
+    filter: alpha(opacity=60);
+    margin-top: -50px;
+    color: white;
+    margin-bottom: 0 !important;
+    height: 50px;
+    padding: 5px;;
+}
+.card-title h5{
+  margin-bottom: 0 !important; 
+  font-size: 1rem;
+}
+.card-title span{
+  font-size: 12px;
+  font-weight: normal;
+}
+.search-list{
+  background-color:#2b2828;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.padding-tb{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.visible-xs{display:none!important}
+@media (max-width:767px){
+  .hidden-xs{display:none!important}
+  .visible-xs{display:block!important}
+  .visible-xs:active ~ .hidden-xs{display:block!important}
+}
