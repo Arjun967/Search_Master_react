@@ -25,21 +25,14 @@ export class ListComponent extends React.Component {
         this.props.removeAllFilter(event);
     }
     render() {
-        console.log('resultAr', this.props.filteredArray);
-        console.log('searchArray', this.props.filterSearch);
+        //console.log('resultAr', this.props.filteredArray);
+        //console.log('searchArray', this.props.filterSearch);
         return (
             <Container>
                 <Row className="padding-tb">
                     <Col>
                         <h6>Selected Filters</h6>
                     </Col>
-                </Row>
-                <Row className="padding-tb">
-                    {this.props.filterSearch.map(element =>
-                        <Col lg={1} key={element.value}>
-                            <Badge pill variant="secondary" value={element.value}>{element.value} <span onClick={this.removeFilter}>X</span></Badge>
-                        </Col>
-                    )}
                 </Row>
                 <Row className="padding-tb">
                     <Col lg={10}></Col>
@@ -104,3 +97,13 @@ export class ListComponent extends React.Component {
         )
     }
 }
+
+/*
+<Row className="padding-tb">
+                    {this.props.filterSearch.map(element =>
+                        <Col lg={1} key={element.value}>
+                            <Badge pill variant="secondary" value={element.value}>{element.value} <span onClick={this.removeFilter}>X</span></Badge>
+                        </Col>
+                    )}
+                </Row>
+*/
